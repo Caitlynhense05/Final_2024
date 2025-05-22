@@ -124,6 +124,14 @@ barchartGC(~infected + treatment,data=gay, type="percent")
 
 The bar graph shows that the vaccine is effective in preventing covid19 in people who are LGBTQ. There is about 20% of LGBTQ people who contracted covid19 and received the vaccine which is significantly lower than the amount of LGBTQ people who received the placebo and contracted covid19. 
 
+##Numerical Results  
+```{r}
+table1 <- xtabs(~infected + treatment, data=gay)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table shows that 20% of LGBTQ people who received the vaccine also contracted covid19. Compared to the LGBTQ people who received the placebo and contracted vaccine which is 80%, we can assume the vaccine is effective at preventing LGBTQ people from contracting covid19.       
 
 
 ## Druggies
