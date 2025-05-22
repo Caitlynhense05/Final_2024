@@ -104,9 +104,16 @@ fisher.test(table1)
 The p-value from the chi-squared test is 0.00000001914 which is less than 0.05 therefore we reject the null hypothesis. The odds ratio from the fisher's exact test is 1.856 which means that there is approximately a 1.86 chance that the vaccine will be effective in women.
 
 
-
 ## LGBTQ
+##Methods  
+$H_0$ The preventative vaccine does not exhibit its effective in people who are LGBTQ.        
+$H_A$ The preventative vaccine exhibits its effective in people who are LGBTQ.    
+Cat~Cat
 
+```{r}
+gay = FinalData[FinalData$LGBTQ=='gay',]
+head(gay)
+```
 
 
 ## Druggies
