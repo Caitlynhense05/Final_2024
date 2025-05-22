@@ -66,6 +66,18 @@ Because the p-value from the chi-squared test is 0.00000000000000022, which is l
 
 ## Females
 
+##Methods  
+$H_0$: The preventative vaccine does not exhibit its effective in females        
+$H_A$: The preventative vaccine exhibits its effective in females.  
+Cat~Cat. 
+
+```{r}
+Females = FinalData[FinalData$sex=='F',]
+head(Females)
+```
+
+
+
 
 ## LGBTQ
 
