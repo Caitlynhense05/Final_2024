@@ -154,6 +154,13 @@ Cat~Cat
 DrugUser = FinalData[FinalData$DrugUser=='yes',]
 ```
 
+##Graphical Results    
+```{r}
+barchartGC(~infected + treatment,data=DrugUser)
+barchartGC(~infected + treatment,data=DrugUser, type="percent")
+```
+
+The bar graphs shows that vaccine is more likely to be less effective in people who are drug users.The amount of people who received the vaccine and contracted covid19 passed 80% which is significantly higher than drug users who received the placebo. 
 
 
 # Overall Results and Conclusions
